@@ -41,7 +41,7 @@ window.addEventListener("load", () => {
       console.log(position);
       lon = position.coords.longitude;
       lat = position.coords.latitude;
-      const base = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&` + `lon=${lon}&appid=${api}`;
+      const base = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api}`;
       timeBlock.classList.remove('inactive');
     circle.classList.remove('inactive');
   fetch(base)
