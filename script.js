@@ -7,8 +7,11 @@ const tempC = document.getElementById("temp");
 const fahrF = document.getElementById("fahr");
 const sunRise = document.getElementById("sun-rise");
 const sunSet = document.getElementById("sun-set");
-const mainContainer = document.getElementsByClassName('container');
+const timeBlock = document.getElementById('sunrise-set');
+const circle = document.getElementById('circle');
 function display(base) {
+    timeBlock.classList.remove('inactive');
+    circle.classList.remove('inactive');
   fetch(base)
     .then((response) => {
       return response.json();
