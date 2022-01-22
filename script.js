@@ -7,6 +7,7 @@ const tempC = document.getElementById("temp");
 const fahrF = document.getElementById("fahr");
 const sunRise = document.getElementById("sun-rise");
 const sunSet = document.getElementById("sun-set");
+const mainContainer = document.getElementsByClassName('container');
 function display(base) {
   fetch(base)
     .then((response) => {
