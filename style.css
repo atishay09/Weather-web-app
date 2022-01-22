@@ -185,7 +185,7 @@ h4 img {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 340px) {
   .container,
   .sunrise-set {
     max-width: 80%;
